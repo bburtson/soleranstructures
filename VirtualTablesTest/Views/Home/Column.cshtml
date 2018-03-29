@@ -1,0 +1,70 @@
+﻿
+@model FooWrapper
+
+@{
+    ViewData["Title"] = "Column";
+    var column = new VirtualColumn();
+}
+
+<h2>@Model.Table.Name  <small> (Table Id : @Model.Table.Id)</small></h2>
+
+<div class="row">
+    @if (Model.Columns.Any())
+    {
+        <div class="col-xs-12">
+            <h4>Columns</h4>
+        </div>
+    }
+
+
+    @foreach (var item in Model.Columns)
+    {
+        <div class="col-xs-2">
+            <ul class="list-unstyled">
+                <li><b>@item.Name</b></li>
+                <li>DataType : @item.VirtualDataType</li>
+            </ul>
+            @Html.ActionLink("DELETE", "DeleteColumn", new { id = item.Id }, new { @class = "btn btn-xs btn-danger" })
+        </div>
+
+
+    }
+</div>
+
+
+<hr />
+<div class="row">
+
+    <div class="col-md-4">
+        <h4>Add Colmun</h4>
+        @using (Html.BeginRouteForm("Default", new { controller = "Home", action = "AddColumn", tableId = Model.Table.Id }))
+        {
+            <div class="form-group">
+                @Html.LabelFor(_ => column.Name)
+                @Html.TextBoxFor(v => column.Name, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(_ => column.VirtualDataType, "Data Type")
+                @Html.DropDownListFor(_ => column.VirtualDataType,
+                        new SelectList(Enum.GetNames(typeof(VirtualDataType))),
+                        new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(_ => column.DefaultValue, "Default Value (Optional)", new { @class = "text-muted" })
+                @Html.TextBoxFor(v => column.DefaultValue, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+
+        }
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

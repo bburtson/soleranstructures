@@ -1,0 +1,51 @@
+﻿@model IEnumerable<VirtualTable>
+@{
+    ViewData["Title"] = "Tables";
+}
+
+<div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Tables</h2>
+            @foreach (var item in Model)
+            {
+                <div class="col-xs-3" style="margin-bottom: 30px;">
+
+                    <h4>@item.Name</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-xs-4">ID: </dt>
+                        <dd>@item.Id</dd>
+                        <dt class="col-xs-4">Entries: </dt>
+                        <dd>@item.Rows.Count</dd>
+                    </dl>
+                    @Html.ActionLink("Config", "Column", new { id = item.Id }, new { @class = "btn btn-xs btn-primary" })
+                    @Html.ActionLink("Delete", "DeleteTable", new { id = item.Id }, new { @class = "btn btn-xs btn-danger" })
+                    @Html.ActionLink("Use", "Row", new { id = item.Id }, new { @class = "btn btn-xs btn-info" })
+                </div>
+            }
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <h3> Add Table </h3>
+
+        <div class="col-xs-6">
+            @using (Html.BeginRouteForm("Default", new { controller = "Home", action = "AddTable" }))
+            {
+
+                <div class="form-group">
+                    Table Name:
+                    @Html.TextBoxFor(_ => new VirtualTable { }.Name, new { @class = "form-control" })
+                </div>
+
+            }
+        </div>
+    </div>
+
+
+
+
+</div>

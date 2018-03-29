@@ -1,0 +1,11 @@
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\bin\Release\netcoreapp2.0\VirtualTablesTest.deps.json
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\bin\Release\netcoreapp2.0\VirtualTablesTest.runtimeconfig.json
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\bin\Release\netcoreapp2.0\VirtualTablesTest.runtimeconfig.dev.json
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\bin\Release\netcoreapp2.0\VirtualTablesTest.dll
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\bin\Release\netcoreapp2.0\VirtualTablesTest.pdb
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\obj\Release\netcoreapp2.0\VirtualTablesTest.csprojResolveAssemblyReference.cache
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\obj\Release\netcoreapp2.0\VirtualTablesTest.csproj.CoreCompileInputs.cache
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\obj\Release\netcoreapp2.0\VirtualTablesTest.AssemblyInfoInputs.cache
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\obj\Release\netcoreapp2.0\VirtualTablesTest.AssemblyInfo.cs
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\obj\Release\netcoreapp2.0\VirtualTablesTest.dll
+C:\Users\BBurtson\Desktop\PUBLIC SHARED FOLDER\soleran-project-output\VirtualTablesTestProject\VirtualTablesTest\obj\Release\netcoreapp2.0\VirtualTablesTest.pdb
